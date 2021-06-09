@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Electron & Mongodb CRUD</title>
+  <link rel="stylesheet" href="ui/bootstrap.min.css">
+  <link rel="stylesheet" href="ui/app.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+</head>
+
+<body>
+  <main class="container-fluid">
+    <div class="row">
+      <div class="col-md-6 p-4 my-auto">
+        <form id="sociForm" class="card card-body">
+          <div class= "form-floating mb-md-3">
+            <input type="text" class="form-control" id="NOMDP" name="NOMDP" placeholder="Nombre" autofocus />
+            <label for="NOMDP" >Nombre Socio</label>
+          </div>
+          <div class="form-floating mb-md-3">
+            <input type="text" class="form-control" id="APELDP" name="APELDP" placeholder="Apellido" autofocus />
+            <label for="APELDP">Apellidos Socio</label>
+          </div>
+          <div class="form-floating mb-md-3">
+            <input type="text" class="form-control" id="DIRECDP" name="DIRECDP" placeholder="Dirección Postal" autofocus />
+            <label for="DIRECDP">Direccion Postal</label>
+          </div>
+          <div class="form-floating mb-md-3">
+            <input type="text" class="form-control" id="cp" name="cp" placeholder="Codigo Postal" autofocus />    
+            <label for="cp">Codigo Postal</label>
+          </div>
+          <div class="form-floating mb-md-3">
+            <input type="text" class="form-control" id="POBLAC" name="POBLAC" placeholder="Población" autofocus />
+            <label for="POBLAC">Poblacion</label>
+          </div>
+          <div class="form-floating mb-md-3">      
+            <input type="text" class="form-control"id="PROVINCIA" name="PROVINCIA" placeholder="Provincia" autofocus />    
+            <label for="PROVINCIA">Provincia</label>
+          </div>
+          <div class="form-floating mb-md-3">      
+            <input type="text" class="form-control" id="TELDP" name="TELDP" placeholder="Telefono" autofocus />    
+            <label for="TELDP">Teléfono</label>
+          </div>
+          <div class="form-floating mb-md-3">      
+            <input type="text" class="form-control" id="MOVILDP" name="MOVILDP" placeholder="Movil" autofocus />    
+            <label for="MOVILDP">Movil</label>
+          </div>    
+          <div class="form-floating mb-md-3">
+            <input type="text" class="form-control" id="emaildp" name="emaildp" placeholder="Correo Electronico" aria-describedby="emailHelp" autofocus />
+            <label for="emaildp" >Correo Electronico</label>
+            <small id="emailHelp" class="form-text text-muted">Este correo no será compartido con nadie.</small>
+          </div>
+          <button type="submit" class="btn btn-secondary">Guardar</button>    
+        </form>
+      </div>
+      <!-- Lista de Socios -->
+      <div class="col-md-6">
+        <div id="sociList"></div>
+      </div>
+    </div>
+  </main>
+  <script src="ui/app.js"></script>
+</body>
+
+</html>
